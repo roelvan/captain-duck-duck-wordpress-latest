@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "dockerfileLines": [
-    "FROM wordpress:latest"
+    "FROM wordpress:latest",
+    "ADD ./src/php.ini /usr/local/etc/php/conf.d"
   ]
 }
