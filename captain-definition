@@ -2,6 +2,6 @@
   "schemaVersion": 1,
   "dockerfileLines": [
     "FROM wordpress:latest",
-    "ADD ./src/php.ini /usr/local/etc/php/conf.d"
+    "ADD ./src/uploads.ini /usr/local/etc/php/conf.d/uploads.ini"
   ]
 }
