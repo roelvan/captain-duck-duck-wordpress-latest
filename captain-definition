@@ -2,6 +2,6 @@
   "schemaVersion": 1,
   "dockerfileLines": [
     "FROM wordpress:latest",
-    "RUN echo 'memory_limit=512M' > /usr/local/etc/php/conf.d/memory-limit.ini;"
+    "ADD ./src/php.ini /usr/local/etc/php/conf.d"
   ]
 }
