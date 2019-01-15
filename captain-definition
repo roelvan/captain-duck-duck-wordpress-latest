@@ -2,6 +2,7 @@
   "schemaVersion": 1,
   "dockerfileLines": [
     "FROM wordpress:latest",
-    "ADD ./src/php.ini /usr/local/etc/php/conf.d"
+    "ADD ./src/php.ini /usr/local/etc/php/conf.d",
+    "COPY ./src/plugins/raven /var/www/html/wp-content/plugins/raven/"
   ]
 }
